@@ -1,0 +1,213 @@
+﻿@model List<int>
+@{
+    ViewBag.Title = "Roulette";
+}
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-md-3 text-muted">
+            <em> Minimum bet: <span class="text-success">10$</span><br />
+           Maximum bet: <span class="text-success">100$</span></em><hr />
+            
+            <span class="lead "><em>Current bets:</em></span>
+            <table class="table roulette-table table-light" border="1">
+                <thead>
+                    <tr class="text-dark">
+                        <th>Numbers</th>
+                        <th>Money</th>
+                    </tr>
+                </thead>
+                <tbody class="text-dark">
+                    @{
+
+                        <!-- Numbers -->
+                        if (Model != null)
+                        {
+                            var groupedNumbers = Model.GroupBy(i => i);
+                            foreach (var item in groupedNumbers)
+                            {
+                                <!--Group the numbers in the list by occurances. 1 occurance == 10$ -->
+
+                                <tr>
+                                    <td>
+                                        @item.Key
+                                    </td>
+
+                                    <td>
+                                        @{
+                                var money = item.Count() * 10;
+                                        }
+                                        <span class="text-success">@money $</span>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-9">
+
+
+
+            <div class="text-center">
+                <span class="">
+                    <!-- user money-->
+                    <strong class="text-white">
+                        Your money:<span class="text-success">
+                            <em>@ViewBag.UserMoney $  </em>
+                        </span>
+                    </strong>
+                </span><!-- end user money-->
+                <!-- Info msgs-->
+                <div class="information text-white">
+                    @{
+                        if (ViewBag.MaxBet == true)
+                        {
+                            <text> <span class="text-danger">This bet is not allowed! (Maximum bet per number is <strong>100$</strong>)</span> </text>
+                        }
+                        if (ViewBag.WinningNumber != null)
+                        {
+                            <text> <br /> <em>Winning number is : <span class="text-warning"><strong>@ViewBag.WinningNumber</strong></span></em>  <br /></text>
+                        }
+                        if (ViewBag.MoneyWon > 0)
+                        {
+                            <text> <em>Congratz! You won <span class="text-success"><strong>@ViewBag.MoneyWon $</strong></span></em> </text>
+
+                        }
+                        if (ViewBag.MoneyWon == 0)
+                        {
+                            <text> <span class="text-danger">You lost @ViewBag.CountBet $ ! </span> </text>
+                        }
+                        if (ViewBag.NotEnoughMoney == true)
+                        {
+                            <text>You don't have enough money ! </text>
+                        }
+                    }
+                </div>
+                <!-- end info msgs-->
+                <hr />
+
+                <img src="/Images/roulette.jpg" height="200" width="200" />
+               
+                    @using (Html.BeginForm("Roulette", "Home", new { id = 999 }))
+                    {
+                        @Html.AntiForgeryToken();
+                        <input type="submit" class="btn btn-lg" value="Spin it" />
+                    }
+                
+            </div>
+        </div>
+
+        
+    </div> <!-- end row-->
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="table-responsive"> <!-- responsive table-->
+
+                <table class="table table-sm" border="1">
+                    <tr>
+                        <td rowspan="4" height="100" width="100">
+                            @using (Html.BeginForm("Roulette", "Home", new { id = 0 }))
+                            {
+                                @Html.AntiForgeryToken();
+
+                                <input type="submit" class="btn btn-radius btn-success" value="0" />
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- Roulette's number-->
+                        @for (int i = 0; i < 12; i++)
+                        {
+                            <text>
+                                <td height="100" width="100" class="roulette-number" id="col-roulette-@i">
+                                    @{
+                            var res = (i + 1) * 3;}
+                                    @using (Html.BeginForm("Roulette", "Home", new { id = @res }))
+                                    {
+                                        @Html.AntiForgeryToken();
+
+                                        if (res % 2 == 0)
+                                        {
+                                            <input type="submit" class="btn btn-radius btn-info"  value="@res" /> <!--Make the even black-->
+
+                                        }
+                                        else
+                                        {
+                                            <input type="submit" class="btn btn-radius btn-danger" value="@res" /> <!-- make the odd red-->
+                                        }
+                                    }
+                                </td></text>
+                        }
+                    </tr>
+                    <tr>
+                        @{
+                            var count = -1;
+                            for (int i = 12; i < 24; i++)
+                            {
+                                <text>
+                                    <td height="100" width="100" class="roulette-number" id="col-roulette-@i">
+
+                                        @{
+                                count += 3;
+
+                                using (Html.BeginForm("Roulette", "Home", new { id = @count }))
+                                {
+                                    @Html.AntiForgeryToken();
+
+                                    if (count % 2 == 0)
+                                    {
+                                        <input type="submit" class="btn btn-radius btn-info" value="@count" /> <!-- make the even black-->
+
+                                    }
+                                    else
+                                    {
+                                        <input type="submit" class="btn btn-radius btn-danger" value="@count" /> <!-- make the odd red-->
+
+                                    }
+                                }
+                                        }
+                                    </td></text>
+                            }
+                        }
+                    </tr>
+                    <tr>
+                        @{
+                            var count2 = -2;
+                            for (int i = 24; i < 36; i++)
+                            {
+                                <text>
+                                    <td height="100" width="100" class="roulette-number" id="col-roulette-@i">
+
+                                        @{
+                                count2 += 3;
+                                using (Html.BeginForm("Roulette", "Home", new { id = @count2 }))
+                                {
+                                    @Html.AntiForgeryToken();
+
+                                    if (count2 % 2 == 0)
+                                    {
+                                        <input type="submit" class="btn btn-radius btn-info" value="@count2" /> <!-- make the even black-->
+
+                                    }
+                                    else
+                                    {
+                                        <input type="submit" class="btn btn-radius btn-danger" value="@count2" /> <!-- make the odd red-->
+
+                                    }
+                                }<!-- end using form-->
+                                        }
+
+                                    </td></text>
+                            }
+                        }
+                    </tr>
+
+                </table>
+            </div>
+            </div> <!-- end responsive table--> 
+    </div>
+
+</div> <!-- end container-->

@@ -1,0 +1,78 @@
+﻿@using HooliganGame.Models;
+@using HooliganGame.Infrastructure;
+@model ApplicationUser
+
+
+<h2 class="text-white">My Profile</h2>
+<div class="container-fluid text-white">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="~/Images/avatar.png" width="200" height="200" />
+        </div>
+        <div class="col-md-8">
+            User
+            <input class="form-control" type="text" placeholder="@Model.UserName" disabled> <br />
+            Role
+
+            <input type="text" class="form-control" placeholder="@ViewBag.role" disabled> <br />
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            @Html.LabelFor(obj => obj.Level)
+            <input class="form-control" type="text" placeholder="@Model.Level" disabled> <br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            @Html.LabelFor(obj => obj.Experience)
+            <input class="form-control" type="text" placeholder="@Model.Experience /1000" disabled>
+            @using (Html.BeginForm("MyProfile", "Home"))
+            {
+                @Html.AntiForgeryToken();
+                <input type="submit" class="form-control btn btn-sm" value="Gain level" /><br />
+                <span class="text-danger">   @ViewBag.GainLevel</span>
+            }
+        </div>
+    </div>
+    <p class="lead text-muted text-info">
+        Statistics:
+    </p>
+    <div class="row">
+        <div class="col-md-12">
+            @Html.LabelFor(obj => obj.Fights)
+            <input class="form-control" type="text" placeholder="@Model.Fights" disabled> <br />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            @Html.LabelFor(obj => obj.FightsWon)
+            <input class="form-control" type="text" placeholder="@Model.FightsWon" disabled> <br />
+        </div>
+    </div>
+    <p class="lead text-muted text-info">
+        Skills:
+    </p>
+
+    <div class="row">
+        <div class="col-md-12">
+            @Html.LabelFor(obj => obj.Strength)
+            <input class="form-control" type="text" placeholder="@Model.Strength" disabled> <br />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            @Html.LabelFor(obj => obj.Speed)
+            <input class="form-control" type="text" placeholder="@Model.Speed" disabled> <br />
+
+            @Html.LabelFor(obj => obj.Money)
+            <input class="form-control text-success" type="text" placeholder="$ @Model.Money" disabled> <br />
+        </div>
+    </div>
+
+</div>
+

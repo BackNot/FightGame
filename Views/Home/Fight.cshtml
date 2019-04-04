@@ -1,0 +1,114 @@
+﻿@using HooliganGame.Models;
+@using HooliganGame.Infrastructure;
+@using Microsoft.AspNet.Identity;
+@using Microsoft.AspNet.Identity.EntityFramework;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<ApplicationUser>
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ApplicationDbContext context = new ApplicationDbContext();
+    var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+    int countColums = 0;
+    // bool userWasPrevious = false; // check to see if current user is being rendered. ( see below info)
+    //   bool userWasFirst = false;
+    <text>  <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-right text-white">
+                        Sort by:
+                        @Html.ActionLink("Level", "Fight", new { sortOrder = 1 })
+                        @Html.ActionLink("Strength", "Fight", new { sortOrder = 2 })
+                        @Html.ActionLink("Speed", "Fight", new { sortOrder = 3 })
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+    </text>
+    foreach (var user in Model)
+    {
+        if (countColums == 12)
+        {
+            @Html.Raw("</div><div class='row'>"); // Start new row if colums are 12
+            countColums = 0;
+        }
+        else
+        {
+            if (user.Id != User.Identity.GetUserId()) { countColums += 4; } // increase the colums ( don't count the current user )
+        }
+        <!-- SHOW USERS to fight-->
+        if (user.Id != User.Identity.GetUserId()) // Show all users except the player that is viewing the page ( he can't fight himself )
+        {
+            //   if(countColums>4){
+
+            //    if (userWasPrevious) // if the current user was previous in the list the Html.Raw method will close a </div>
+            //     {                     // that will be a closing row. So this check is made to not break the layout
+            if (countColums > 12)
+            { @Html.Raw("<div class='row'><div class='col-md-4'>");
+        }
+        //                                                         userWasPrevious = false;
+        //      }
+        //      else {
+        //     @Html.Raw("<div class='col-md-4'>");
+        //      }
+        // }
+        else
+        {
+
+
+            @Html.Raw("<div class='col-md-4'>")
+        }
+
+        <table class="table table-sm table-light" border="1">
+            <tr>
+                <td>Fighter</td>
+            </tr>
+            <tr>
+                <td>@user.UserName</td>
+            </tr>
+            <tr>
+                <td>
+                    @{
+                        if (user.Roles.FirstOrDefault() != null) // If user is in role show it
+                        {
+                            <text>@user.Roles.FirstOrDefault().Role.Name</text>
+                        }
+                }
+            </td>
+        </tr>
+        <tr><td>Level: @user.Level</td></tr>
+
+        <tr>
+            <td>Strength: @user.Strength</td>
+        </tr>
+        <tr>
+            <td>
+                Speed: @user.Speed
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @using (Html.BeginForm("Fight", "Home",
+                                                      new { id = @user.Id }))
+                {
+                    <input type="submit" class="btn btn-success" value="FIGHT" />
+                }
+            </td>
+        </tr>
+    </table>
+    @Html.Raw("</div>")// close column
+}
+//   else
+//    {
+//        userWasPrevious = true;
+//   }
+}
+
+}
+</div>
+<br />
+
+@Html.PagedListPager(Model, page => Url.Action("Fight",
+    new { page, sortOrder = ViewBag.CurrentSort}))
+</div>

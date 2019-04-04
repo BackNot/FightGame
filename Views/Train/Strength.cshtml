@@ -1,0 +1,110 @@
+﻿@using HooliganGame.Models;
+@using HooliganGame.Infrastructure;
+@using System.Web.Mvc;
+@using Microsoft.AspNet.Identity;
+@using Microsoft.AspNet.Identity.EntityFramework;
+@{
+    // Get the current user. If it isn't null check how much its going to cost him to train and how much
+    // he is going to gain. Then write it around the 'train' button
+
+    var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+
+    var user = UserManager.FindById(User.Identity.GetUserId());
+
+
+
+    int gainBenchPress = user.Level * 10;
+    int costBenchPress = user.Level * 25;
+    int gainSquat = user.Level * 15;
+    int costSquat = user.Level * 30;
+    int gainBicepsCurls = user.Level * 5;
+    int costBicepsCurls = user.Level * 5;
+    int gainDips = user.Level * 20;
+    int costDips = user.Level * 35;
+    int gainPullUp = user.Level * 10;
+    int costPullUp = user.Level * 10;
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-md-4">
+                <table>
+                    <tr><td><span class="lead cust-font">Bench press</span></td></tr>
+                    <tr><td><img src="/Images/BenchPress.jpg" height="150" width="150" /></td></tr>
+                    <tr><td>Cost: <span class="text-danger">$ @costBenchPress</span></td></tr>
+                    <tr><td>Strength: <span class="text-success">@gainBenchPress</span></td></tr>
+
+                    @using (Html.BeginForm("Bench", "Train", FormMethod.Post,
+                                      new { enctype = "multipart/form-data" }))
+                    {
+                        <tr><td><input type="submit" class="btn btn-lg btn-block btn-info" value="TRAIN " /></td></tr>
+                    }
+                </table>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <table>
+                    <tr><td><span class="lead text-lg-center cust-font">Pull ups</span></td></tr>
+                    <tr><td><img src="/Images/PullUps.png" width="150" height="150" /></td></tr>
+                    <tr><td>Cost: <span class="text-danger">$ @costPullUp</span></td></tr>
+                    <tr><td>Strength: <span class="text-success">@gainPullUp</span></td></tr>
+
+                    @using (Html.BeginForm("PullUp", "Train", FormMethod.Post,
+                                      new { enctype = "multipart/form-data" }))
+                    {
+                        <tr><td><input type="submit" class="btn btn-lg btn-block btn-info" value="TRAIN " /></td></tr>
+                    }
+                </table>
+            </div>
+            <div class="col-md-4">
+                <table>
+                    <tr><td><span class="lead text-lg-center cust-font">Bicep curls</span></td></tr>
+                    <tr><td><img src="/Images/BicepsCurls.jpg" width="150" height="150" /></td></tr>
+                    <tr><td>Cost: <span class="text-danger">$ @costBicepsCurls</span></td></tr>
+                    <tr><td>Strength: <span class="text-success">@gainBicepsCurls</span></td></tr>
+
+                    @using (Html.BeginForm("Biceps", "Train", FormMethod.Post,
+                                  new { enctype = "multipart/form-data" }))
+                    {
+                        <tr><td><input type="submit" class="btn btn-lg btn-block btn-info" value="TRAIN " /></td></tr>
+                    }
+                </table>
+            </div>
+        </div> <!-- end first row (3x4,4,4)-->
+        <div class="row">
+            <div class="col-md-6">
+                <table>
+                    <tr><td><span class="lead text-lg-center cust-font">Squat</span></td></tr>
+                    <tr><td><img src="/Images/Squat.jpg" width="150" height="150" /></td></tr>
+                    <tr><td>Cost: <span class="text-danger">$ @costSquat</span></td></tr>
+                    <tr><td>Strength: <span class="text-success">@gainSquat</span></td></tr>
+
+                    @using (Html.BeginForm("Squat", "Train", FormMethod.Post,
+                                  new { enctype = "multipart/form-data" }))
+                    {
+                        <tr><td><input type="submit" class="btn btn-lg btn-block btn-info" value="TRAIN " /></td></tr>
+                    }
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <table>
+                    <tr><td><span class="lead text-lg-center cust-font">Dips</span></td></tr>
+                    <tr><td><img src="/Images/Dips.jpg" width="150" height="150" /></td></tr>
+                    <tr><td>Cost: <span class="text-danger">$ @costDips</span></td></tr>
+                    <tr><td>Strength: <span class="text-success">@gainDips</span></td></tr>
+
+                    @using (Html.BeginForm("Dips", "Train", FormMethod.Post,
+                                  new { enctype = "multipart/form-data" }))
+                    {
+                        <tr><td><input type="submit" class="btn btn-lg btn-block btn-info" value="TRAIN " /></td></tr>
+                    }
+                </table>
+            </div>
+
+
+        </div> <!-- end second row (2x6,6)-->
+
+
+    </div>
+}

@@ -1,0 +1,128 @@
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\HooliganGame.dll.config
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\HooliganGame.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\HooliganGame.pdb
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Antlr3.Runtime.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\EntityFramework.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\EntityFramework.SqlServer.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.Google.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Web.Infrastructure.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Newtonsoft.Json.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Owin.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.Helpers.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.Mvc.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.Optimization.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.Razor.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.WebPages.Deployment.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.WebPages.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.WebPages.Razor.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\WebGrease.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.Helpers.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.Mvc.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.Optimization.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.Razor.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.WebPages.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.WebPages.Deployment.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\System.Web.WebPages.Razor.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Newtonsoft.Json.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Antlr3.Runtime.pdb
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\EntityFramework.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\EntityFramework.SqlServer.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.Google.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\obj\Debug\HooliganGame.csprojResolveAssemblyReference.cache
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\obj\Debug\HooliganGame.dll
+c:\users\alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\obj\Debug\HooliganGame.pdb
+C:\Users\Alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\obj\Debug\HooliganGame.Migrations.InitialCreate.resources
+C:\Users\Alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\obj\Debug\HooliganGame.csproj.GenerateResource.Cache
+C:\Users\Alex\documents\visual studio 2013\Projects\HooliganGame\HooliganGame\obj\Debug\HooliganGame.Migrations.AddMoneyInsteadOfPower.resources
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\HooliganGame\HooliganGame\obj\Debug\HooliganGame.Migrations.MakeUserMoneyDecimal.resources
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\HooliganGame\HooliganGame\obj\Debug\HooliganGame.Migrations.AddUserExperience.resources
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\HooliganGame\HooliganGame\bin\PagedList.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\HooliganGame\HooliganGame\bin\PagedList.Mvc.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\HooliganGame\HooliganGame\bin\PagedList.xml
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\HooliganGame\HooliganGame\bin\PagedList.Mvc.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\HooliganGame.dll.config
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\HooliganGame.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\HooliganGame.pdb
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Antlr3.Runtime.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\EntityFramework.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\EntityFramework.SqlServer.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Newtonsoft.Json.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Owin.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\PagedList.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\PagedList.Mvc.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.Helpers.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.Mvc.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.Optimization.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.Razor.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.WebPages.Deployment.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.WebPages.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.WebPages.Razor.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\WebGrease.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\PagedList.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\PagedList.Mvc.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.Helpers.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.Mvc.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.Optimization.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.Razor.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.WebPages.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.WebPages.Deployment.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\System.Web.WebPages.Razor.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Newtonsoft.Json.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Antlr3.Runtime.pdb
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\EntityFramework.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\EntityFramework.SqlServer.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\alex\Desktop\Stuff\HooliganGame\obj\Debug\HooliganGame.csproj.CoreCompileInputs.cache
+C:\Users\alex\Desktop\Stuff\HooliganGame\obj\Debug\HooliganGame.csproj.CopyComplete
+C:\Users\alex\Desktop\Stuff\HooliganGame\obj\Debug\HooliganGame.dll
+C:\Users\alex\Desktop\Stuff\HooliganGame\obj\Debug\HooliganGame.pdb
+C:\Users\alex\Desktop\Stuff\HooliganGame\obj\Debug\HooliganGame.csprojAssemblyReference.cache
+C:\Users\alex\Desktop\Stuff\HooliganGame\obj\Debug\HooliganGame.Migrations.InitialCreate.resources
+C:\Users\alex\Desktop\Stuff\HooliganGame\obj\Debug\HooliganGame.csproj.GenerateResource.cache
+C:\Users\alex\Desktop\Stuff\HooliganGame\obj\Debug\HooliganGame.Migrations.Initial.resources

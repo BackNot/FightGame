@@ -1,0 +1,56 @@
+﻿@using HooliganGame.Models;
+@using HooliganGame.Infrastructure;
+@using System.Web.Mvc;
+@using Microsoft.AspNet.Identity;
+@using Microsoft.AspNet.Identity.EntityFramework;
+@{
+    // Get the current user. If it isn't null check how much its going to cost him to train and how much 
+    // he is going to gain. Then write it around the 'train' button
+   
+    var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+   
+    var user = UserManager.FindById(User.Identity.GetUserId());
+
+   
+    
+        int costTreadmill = user.Level * 50;
+        int gainTreadmill = user.Level * 10;
+        int costRope = user.Level * 25;
+        int gainRope = user.Level * 5 ;
+<div class="container d-flex flex-column ">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <table>
+                <tr><td><span class="lead text-danger cust-font"><em>Run on treadmill</em></span></td></tr>
+                <tr><td><img src="/Images/CardioTreadmill.png" height="150" width="150" /></td></tr>
+                <tr><td class="text-white">Cost: <span class="text-danger">$ @costTreadmill</span></td></tr>
+                <tr><td class="text-white">Speed: <span class="text-success">@gainTreadmill</span></td></tr>
+
+                @using (Html.BeginForm("Treadmill", "Train", FormMethod.Post,
+                                      new { enctype = "multipart/form-data" }))
+                {
+                    <tr><td><input type="submit" class="btn btn-lg btn-block btn-info" value="TRAIN " /></td></tr>
+                }
+            </table>
+        </div>
+
+
+
+        <div class="col-md-5">
+            <table>
+                <tr><td><span class="lead text-center text-danger cust-font"><em>Jump on rope</em></span></td></tr>
+                <tr><td><img src="/Images/RopeJumping2.jpg" width="150" height="150" /></td></tr>
+                <tr><td class="text-white">Cost: <span class="text-danger">$ @costRope</span></td></tr>
+                <tr><td class="text-white">Speed: <span class="text-success">@gainRope</span></td></tr>
+
+                @using (Html.BeginForm("Rope", "Train", FormMethod.Post,
+                                      new { enctype = "multipart/form-data" }))
+                {
+                    <tr><td><input type="submit" class="btn btn-lg btn-block btn-info" value="TRAIN " /></td></tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+    }
+   

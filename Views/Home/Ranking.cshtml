@@ -1,0 +1,56 @@
+﻿@using HooliganGame.Models;
+@using HooliganGame.Infrastructure;
+@using Microsoft.AspNet.Identity;
+@model  List<ApplicationUser>
+
+@{
+
+    ApplicationDbContext context = new ApplicationDbContext();
+    <text>
+        <span class="text-white">
+            Sort by:@Html.ActionLink("Level", "Ranking", new { sortOrder = "LevelHigh" })&#8593;
+            or @Html.ActionLink("Level", "Ranking", new { sortOrder = "LevelLow" })&#8595;, @Html.ActionLink("Money", "Ranking", new { sortOrder = "MoneyHigh" })&#8593; or @Html.ActionLink("Money", "Ranking", new { sortOrder = "MoneyLow" })&#8595;,
+            @Html.ActionLink("Fights", "Ranking", new { sortOrder = "Fights" }), @Html.ActionLink("Fights won", "Ranking", new { sortOrder = "FightsWon" }) , @Html.ActionLink("Strength", "Ranking", new { sortOrder = "Str" }) , @Html.ActionLink("Speed", "Ranking", new { sortOrder = "Speed" })
+        </span>
+    </text>
+    <table class="table table-sm table-striped table-light">
+        <thead>
+            <tr>
+                <th>Username:</th>
+                <th>Role:</th>
+                <th>Level:</th>
+                <th>Fights:</th>
+                <th>Fights won:</th>
+                <th>Strength</th>
+                <th>Speed</th>
+                <th>Money</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                @foreach (var user in Model)
+                {
+                    if (User.Identity.GetUserId() == user.Id)
+                    {
+                        @Html.Raw("<tr class='table-warning'>"); // Mark the user that is viewing the page in yellow
+                    }
+                    else
+                    {
+                        @Html.Raw("<tr>"); // Mark all the other user in default scheme
+                    }
+                    <td>@user.UserName</td>
+                    <td>@user.Roles.FirstOrDefault().Role.Name</td>
+                    <td>@user.Level</td>
+                    <td>@user.Fights</td>
+                    <td>@user.FightsWon</td>
+                    <td>@user.Strength</td>
+                    <td>@user.Speed</td>
+                    <td>@user.Money</td>
+                    @Html.Raw("</tr>");
+
+                }
+            </tr>
+        </tbody>
+    </table>
+
+}

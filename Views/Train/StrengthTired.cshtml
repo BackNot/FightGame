@@ -1,0 +1,20 @@
+﻿
+<div class="text-center text-white">
+    @{
+        
+    if(ViewBag.Money==null)
+    {
+    <img src="~/Images/tired.png" width="250" height="200" /><br />
+  <text>  You gained: <span class="lead text-success">@ViewBag.StrengthGained</span> strength<br />
+    You gained: <span class="lead text-warning">@ViewBag.ExpGained</span> experience<br />
+
+    You spended: <span class="lead text-danger">$ @ViewBag.MoneySpended</span>
+    <br /></text>
+    }
+        else
+{
+   <span class="text-danger"> @ViewBag.Money</span>
+}
+}
+</div>
+<a href="~/Train/Strength" class="text-muted mt-2">Back to training zone</a>

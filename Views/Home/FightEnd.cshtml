@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "FightEnd";
+}
+
+
+<div class="text-center text-white">
+    @{
+        if (ViewBag.Result == "won")
+        {
+            <h2 class="text-success">You won!</h2>
+            <img src="~/Images/youWon.jpg" width="100" height="100" />
+
+            <br /> <text><span class="lead">You gained: <span class="text-success">@ViewBag.GainedMoney  $</span></span><br /></text>
+            <text><span class="lead">You gained: <span class="text-info">@ViewBag.GainedSpeed  speed</span></span><br /></text>
+            <text><span class="lead">You gained:<span class="text-light"> @ViewBag.GainedStrength strength</span></span><br /></text>
+            <text><span class="lead">You gained: <span class="text-warning">@ViewBag.GainedExp experience</span></span><br /></text>
+
+        }
+        else
+        {
+            <h2 class="text-danger">You lost!</h2>
+            <img src="~/Images/lostFight.gif" width="100" height="100" /><br />
+            <text><span class="lead">You lost: <span class="text-danger">@ViewBag.LostMoney  $</span></span><br /></text>
+            <text><span class="lead">
+                    You lost: <span class="text-danger">
+                        @ViewBag.LostSpeed  speed
+                    </span>
+                </span><br /></text>
+            <text><span class="lead">You lost: <span class="text-danger">@ViewBag.LostStrength strength</span></span><br /></text>
+            <text><span class="lead">You lost: <span class="text-danger">@ViewBag.LostExp experience</span></span><br /></text>
+        }
+    }
+</div>
