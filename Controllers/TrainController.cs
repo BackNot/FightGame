@@ -155,7 +155,7 @@ namespace HooliganGame.Controllers
                 ViewBag.ExpGained = user.Level * 5;
                 user.Strength += user.Level * 10; // increase his str by level* 17
                 user.Money -= user.Level * 10; // decrease his money
-                user.Experience += user.Experience * 5;
+                user.Experience += user.Level * 5;
                 UserManager.Update(user);
             }
             else
