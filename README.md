@@ -8,10 +8,13 @@ You can gain level when you obtain a certain amount of experience.More experienc
 When you fight someone and you win you receive money,speed,strength and exp. When you lose against someone you lose stats.
 There's slight bonus for the defender. There's also bonus for stats that are closer to each other. (For example: Strength 100 with speed 0 is weaker than Strength 70 and Speed 50)
 
-Stack used: ASP.NET MVC,ASP.NET Identity,Entity Framework, HTML5/CSS3, JavaScript(jQuery) , Bootstrap 4.
+## Stack used
+ASP.NET MVC,ASP.NET Identity,Entity Framework, HTML5/CSS3, JavaScript(jQuery) , Bootstrap 4.
 
-Suited for: Visual Studio 2017 && SQL Server 2017.
+## Suited for
+Visual Studio 2017 && SQL Server 2017.
 
+### Pictures
 Index:
 ![Index](https://github.com/BackNot/FightGameMVC/blob/master/PicturesOfProject/Index.png)
 
