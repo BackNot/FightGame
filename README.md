@@ -14,7 +14,7 @@ ASP.NET MVC,ASP.NET Identity,Entity Framework, HTML5/CSS3, JavaScript(jQuery) , 
 ## Suited for
 Visual Studio 2017 && SQL Server 2017.
 
-### Pictures
+## Pictures
 Index:
 ![Index](https://github.com/BackNot/FightGameMVC/blob/master/PicturesOfProject/Index.png)
 
